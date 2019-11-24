@@ -12,7 +12,7 @@ done
 ssh-keygen -f id_rsa -t rsa -N ''
 
 # Setup ZSH
-sudo apt-get install zsh
+sudo apt-get install -y zsh
 wget https://raw.githubusercontent.com/mjm159/env-setup/master/zshrc.cfg ~/.zshrc
 echo 'export ZSH="/Users/michael/.oh-my-zsh"' >> ~/.zshrc
 echo 'export SHELL=/bin/zsh' >> ~/.bashrc_profile
