@@ -14,9 +14,10 @@ ssh-keygen -f id_rsa -t rsa -N ''
 # Setup ZSH
 sudo apt-get install -y zsh
 wget https://raw.githubusercontent.com/mjm159/env-setup/master/zshrc.cfg ~/.zshrc
-echo 'export ZSH="/Users/michael/.oh-my-zsh"' >> ~/.zshrc
+echo 'export ZSH=".oh-my-zsh"' >> ~/.zshrc
 echo 'export SHELL=/bin/zsh' >> ~/.bashrc_profile
 echo 'exec /bin/zsh -l' >> ~/.bash_profile
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Setup VIM
 # setting up vimrc
