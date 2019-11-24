@@ -1,9 +1,5 @@
 # Packages
-PACKAGES=[
-	vim,
-	git,
-	zsh,
-	]
+PACKAGES=(vim, git, zsh)
 
 # Update & Install Packages
 sudo apt-get update
