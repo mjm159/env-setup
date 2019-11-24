@@ -1,1 +1,3 @@
-A repo to house scripts to setup and automate development environment setup
+# SETUP
+
+A script to setup a command line environment
