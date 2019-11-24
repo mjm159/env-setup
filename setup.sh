@@ -17,14 +17,14 @@ ssh-keygen -f id_rsa -t rsa -N ''
 
 # Setup ZSH
 sudo apt-get install zsh
-cp zshrc.cfg ~/.zshrc
+wget https://raw.githubusercontent.com/mjm159/env-setup/master/zshrc.cfg ~/.zshrc
 echo 'export ZSH="/Users/michael/.oh-my-zsh"' >> ~/.zshrc
 echo 'export SHELL=/bin/zsh' >> ~/.bashrc_profile
 echo 'exec /bin/zsh -l' >> ~/.bash_profile
 
 # Setup VIM
 # setting up vimrc
-cp vimrc.cfg ~/.vimrc
+wget https://raw.githubusercontent.com/mjm159/env-setup/master/vimrc.cfg ~/.vimrc
 echo 'execute pathogen#infect()' >> ~/.vimrc
 echo syntax on >> ~/.vimrc
 echo filetype plugin indent on >> ~/.vimrc
